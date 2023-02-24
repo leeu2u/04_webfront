@@ -66,9 +66,25 @@ btn2.addEventListener("click", function(){
 })
 
 //배경색이 입력한 값으로 변하는 박스
-
  document.getElementById("input1").addEventListener("keyup", function(){
     // 박스 요소 선택
     const div1 = document.getElementById("div1");
     div1.style.backgroundColor = this.value;
  })
+
+
+ document.getElementById("div2").addEventListener("mouseover", function(){
+   this.style.width = "300px";
+   this.style.backgroundColor = "pink";
+   
+
+ })
+ document.getElementById("div2").addEventListener("mouseleave", function(){
+   this.style.width = "0px";
+   this.style.visibility = "hidden";
+   
+
+ })
+
+    
+    
